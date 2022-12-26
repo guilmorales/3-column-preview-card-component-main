@@ -9,6 +9,9 @@
   --color-dark-cyan: hsl(179, 100%, 13%);
   --color-transparent-white: hsla(0, 0%, 100%, 0.75);
   --color-light-gray: hsl(0, 0%, 95%);
+
+  /*====== Font and typography =====*/
+  --primary-font: 'Lexend Deca', sans-serif;
 }
 
 /*=============== BASE =============*/

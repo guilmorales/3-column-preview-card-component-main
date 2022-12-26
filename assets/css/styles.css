@@ -1,0 +1,129 @@
+/*========== GOOGLE FONTS ==========*/
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap');
+
+/*========== VARIABLES CSS =========*/
+:root {
+  /*============ Colors ============*/
+  --color-bright-orange: hsl(31, 77%, 52%);
+  --color-cyan: hsl(184, 100%, 22%);
+  --color-dark-cyan: hsl(179, 100%, 13%);
+  --color-transparent-white: hsla(0, 0%, 100%, 0.75);
+  --color-light-gray: hsl(0, 0%, 95%);
+
+  /*====== Font and typography =====*/
+  --primary-font: 'Lexend Deca', sans-serif;
+  --big-font-size: 1.25rem;
+  --small-font-size: 0.8125rem;
+  --smaller-font-size: 0.6875rem;
+}
+
+/*=============== BASE =============*/
+*, ::before, ::after {
+  box-sizing: border-box;
+}
+
+body, h2 {
+  margin: 0;
+}
+
+body {
+  display: grid;
+  place-content: center;
+  min-height: 100vh;
+  padding: 1.25rem;
+
+  font-family: var(--primary-font);
+  font-size: 15px;
+  color: var(--color-transparent-white);
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  max-width: 25rem;
+
+  border-radius: 0.625rem;
+  overflow: hidden;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 1.7rem;
+  padding: 3rem;
+}
+
+.card-image {
+  max-width: 4rem;
+}
+
+.card-title {
+  font-family: 'Big Shoulders Display', sans-serif;
+  font-size: 2.5rem;
+  text-transform: uppercase;
+  color: var(--color-light-gray);
+}
+
+.card-description {
+  margin: 0;
+  line-height: 1.5;
+}
+
+.card-link {
+  background-color: var(--color-light-gray);
+  padding: 0.8rem 1.9rem;
+  border-radius: 2rem;
+  text-decoration: none;
+  border: 0.125rem solid var(--color-transparent-white);
+}
+
+.btn-one {
+  color: var(--color-bright-orange);
+}
+
+.btn-one:hover {
+  color: var(--color-transparent-white);
+  background-color: var(--color-bright-orange);
+}
+
+.btn-two {
+  color: var(--color-cyan);
+}
+
+.btn-two:hover {
+  color: var(--color-transparent-white);
+  background-color: var(--color-cyan);
+}
+
+.btn-three {
+  color: var(--color-dark-cyan);
+}
+
+.btn-three:hover {
+  color: var(--color-transparent-white);
+  background-color: var(--color-dark-cyan);
+}
+
+.card:nth-of-type(1) {
+  background-color: var(--color-bright-orange);
+}
+
+.card:nth-of-type(2) {
+  background-color: var(--color-cyan);
+}
+
+.card:nth-of-type(3) {
+  background-color: var(--color-dark-cyan);
+}
+
+@media screen and (min-width: 1140px) {
+  .container {
+    flex-direction: row;
+    max-width: 57.5rem;
+  }
+
+  .card-link {
+    margin-top: 3.625rem;
+  }
+}
